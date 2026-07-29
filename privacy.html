@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 · Quantum Asset</title>
+<meta name="robots" content="index, follow">
+<style>
+:root { color-scheme: dark light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0;
+  background: #101014; color: #E9EAEE;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+               'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin: 0 0 6px; }
+.meta { color: #7C828C; font-size: 13px; margin: 0 0 36px; }
+h2 { font-size: 17px; font-weight: 700; margin: 36px 0 10px; }
+p { color: #A5ABB4; font-size: 15px; margin: 0; white-space: pre-line; }
+a { color: #3182F6; }
+nav { margin: 0 0 32px; display: flex; gap: 10px; flex-wrap: wrap; }
+nav a {
+  display: inline-block; padding: 9px 16px; border-radius: 999px;
+  background: #17171C; color: #E9EAEE; text-decoration: none; font-size: 14px;
+}
+nav a[aria-current] { background: #3182F6; color: #fff; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.08);
+         color: #7C828C; font-size: 13px; }
+@media (prefers-color-scheme: light) {
+  body { background: #fff; color: #16171A; }
+  p { color: #44474D; }
+  nav a { background: #F1F2F4; color: #16171A; }
+  footer { border-top-color: rgba(0,0,0,.1); color: #6B7076; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="index.html">홈</a><a href="privacy.html" aria-current="page">개인정보 처리방침</a><a href="terms.html">이용약관</a></nav>
+<h1>개인정보 처리방침</h1>
+<p class="meta">Quantum Asset · 시행일 2026년 7월 28일</p>
+  <h2>1. 요약</h2>
+  <p>Quantum Asset(이하 &quot;앱&quot;)은 개인 자산 기록을 돕는 도구입니다. 앱을 만든 사람은 회원 데이터베이스를 운영하지 않으며, 이용자의 자산 정보를 수집하거나 넘겨받지 않습니다. 모든 기록은 이용자 본인의 구글 계정에 있는 구글 스프레드시트에 저장되고, 앱은 그 시트를 읽고 쓰는 역할만 합니다.</p>
+  <h2>2. 앱이 다루는 정보</h2>
+  <p>· 구글 계정 정보: 로그인 시 구글이 발급하는 접근 토큰. 이용자의 기기에만 저장되며 외부로 전송되지 않습니다.
+· 자산 기록: 보유 종목·수량·평단·거래내역·배당·설정값. 이용자의 구글 스프레드시트에 저장됩니다.
+· 앱 설정: 연결한 시트 ID, 총자산 숨기기 여부 등. 기기 내부 저장소에만 남습니다.</p>
+  <h2>3. 접근 권한의 범위</h2>
+  <p>앱이 요청하는 구글 권한은 &quot;앱이 만든 파일에 대한 접근&quot;(drive.file) 하나뿐입니다.
+· 앱은 이용자의 구글 드라이브에서 자신이 만든 자산장부 파일만 열고 쓸 수 있습니다. 이용자가 따로 가지고 있는 문서·스프레드시트·사진에는 접근할 수 없고, 드라이브 목록을 훑지도 않습니다.
+· 지메일, 연락처, 캘린더에는 접근하지 않으며 그 권한을 요청하지도 않습니다.
+· 권한은 구글 계정 설정 &gt; 보안 &gt; 서드파티 앱에서 언제든 철회할 수 있습니다. 철회하면 앱은 기존 장부를 더 이상 열 수 없게 되지만, 스프레드시트 자체는 이용자의 드라이브에 그대로 남습니다.</p>
+  <h2>4. 외부로 나가는 통신</h2>
+  <p>앱은 다음 세 곳하고만 통신합니다.
+· 구글 로그인 및 구글 스프레드시트/드라이브 API — 이용자의 시트를 읽고 쓰기 위해
+· 업비트 공개 시세 API — 코인 현재가를 가져오기 위해(계정 정보 없이 시세만 조회)
+광고 SDK, 분석 도구, 자체 서버는 사용하지 않습니다. 이용자의 자산 금액이 앱 개발자에게 전달되는 경로는 없습니다.</p>
+  <h2>5. 보관과 삭제</h2>
+  <p>앱 안에서 로그아웃하면 기기에 저장된 로그인 정보와 연결된 장부 정보가 지워집니다(구글 계정 권한 자체는 유지되며, 다시 로그인하면 만들어 둔 장부를 이어서 쓸 수 있습니다). 앱을 삭제하면 기기에 저장된 토큰과 설정은 함께 지워집니다. 자산 기록은 이용자의 구글 스프레드시트에 그대로 남으므로, 완전히 지우려면 구글 드라이브에서 해당 시트를 삭제하세요. 구글 계정 설정 &gt; 보안 &gt; 서드파티 앱에서 앱의 접근 권한을 언제든 철회할 수 있습니다.</p>
+  <h2>6. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만을 대상으로 하지 않습니다.</p>
+  <h2>7. 문의</h2>
+  <p>개인정보 처리에 관한 문의는 zxcvzxcv4423@gmail.com 로 보내주세요.</p>
+  <h2>8. 방침 변경</h2>
+  <p>내용이 바뀌면 앱 업데이트와 함께 이 화면의 시행일을 갱신합니다.</p>
+<footer>문의 <a href="mailto:zxcvzxcv4423@gmail.com">zxcvzxcv4423@gmail.com</a></footer>
+</div>
+</body>
+</html>
